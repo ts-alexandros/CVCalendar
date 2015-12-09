@@ -100,7 +100,6 @@ extension CVAuxiliaryView {
         let path = UIBezierPath(arcCenter: arcCenter, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: clockwise)
         
         return path
-        
     }
     
     func rightFlagPath() -> UIBezierPath {

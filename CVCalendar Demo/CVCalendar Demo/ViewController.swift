@@ -165,7 +165,7 @@ extension ViewController: CVCalendarViewDelegate, CVCalendarMenuViewDelegate {
     }
     
     func shouldShowCustomSingleSelection() -> Bool {
-        return true
+        return false
     }
 
     func preliminaryView(viewOnDayView dayView: DayView) -> UIView {
