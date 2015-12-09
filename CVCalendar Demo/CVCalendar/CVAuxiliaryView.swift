@@ -60,6 +60,12 @@ public final class CVAuxiliaryView: UIView {
             case .LeftFlag: path = leftFlagPath()
             case .Circle: path = circlePath()
             case .Rect: path = rectPath()
+            case .Custom(let customPath): path = customPath
+            }
+            
+            switch shape {
+            case .Custom: break
+            default: path.lineWidth = 1
             }
         }
         
@@ -67,7 +73,6 @@ public final class CVAuxiliaryView: UIView {
         fillColor.setFill()
         
         if let path = path {
-            path.lineWidth = 1
             path.stroke()
             path.fill()
         }
